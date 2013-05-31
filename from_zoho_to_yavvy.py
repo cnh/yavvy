@@ -38,3 +38,19 @@ print root
 #b_file.close()
 for elem in tree.iter():
     	print elem.tag, elem.text, elem.attrib
+
+# fast element searching using iterparse
+
+'''
+http://eli.thegreenplace.net/2012/03/15/processing-xml-in-python-with-elementtree/
+http://effbot.org/zone/element-iterparse.htm
+
+count = 0
+for event, elem in ET.iterparse(sys.argv[2]):
+    if event == 'end':
+        if elem.tag == 'location' and elem.text == 'Zimbabwe':
+            count += 1
+    elem.clear() # discard the element
+
+print count
+'''
