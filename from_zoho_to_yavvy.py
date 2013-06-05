@@ -1,5 +1,6 @@
 #AUTHTOKEN=6d8c8ddfbf9c6ed53c0cc4de81a5e6f7
-
+#adapted from
+#http://www.zoho.com/crm/help/api/examples.html#3._Fetch_Records_from_the
 
 import urllib
 import urllib2
